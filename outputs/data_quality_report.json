@@ -1,0 +1,38 @@
+{
+  "row_counts": {
+    "clean_sales_rows": 2267,
+    "joined_fact_rows": 2267
+  },
+  "null_checks": {
+    "order_date": 0,
+    "customer_id": 0,
+    "product_id": 0,
+    "quantity": 0,
+    "unit_price": 0
+  },
+  "uniqueness_checks": {
+    "transaction_id": {
+      "column": "transaction_id",
+      "duplicate_count": 0,
+      "is_unique": true
+    }
+  },
+  "range_checks": {
+    "quantity": {
+      "column": "quantity",
+      "min_allowed": 0.0001,
+      "violations": 0
+    },
+    "unit_price": {
+      "column": "unit_price",
+      "min_allowed": 0.0001,
+      "violations": 0
+    }
+  },
+  "referential_integrity": {
+    "total_rows": 2267,
+    "orphaned_rows": 17,
+    "orphan_rate_pct": 0.75
+  },
+  "overall_status": "PASS"
+}
